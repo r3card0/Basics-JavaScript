@@ -24,3 +24,4 @@ nombre();
 
 Bruce Wayne
 ````
+Si se quiere ejecutar una variable local en el scope global, el programa ejecutara un error indicando que la variable no está definida.
