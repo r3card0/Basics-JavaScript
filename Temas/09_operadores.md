@@ -11,3 +11,4 @@ Tipos de operadores:
 | variables   | ++, +=                |
 | Otros       | !false, !true         |
 
+[Operators in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators)
