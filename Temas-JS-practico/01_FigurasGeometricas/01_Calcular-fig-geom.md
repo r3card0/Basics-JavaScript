@@ -113,3 +113,28 @@ Herramienta de JavaScript para obtener el valor de π
 var pi = Math.PI;
 ````
 
+# Convertir las *const* en funciones.
+
+1. Cambiar la palabra *const* por *function*
+2. después del nombre colocar la estructura de una función
+3. ()
+4. Abrir {
+5. Palabra reservada *return* y la expresión
+6. Cerrar }
+
+````
+// const to function
+const perimetroCuadrado = ladoCuadrado * 4
+
+// function
+
+function perimetroCuadrado(){
+    return ladoCuadrado * 4
+}
+`````
+
+Cambiar las const que realizan operaciones por funciones nos trae el siguiente resultado:
+![funciones-resultados](/Doc/images/funciones-resultados.png)
+
+Así se pueden cambiar los valores de las medidas. 😉
+
