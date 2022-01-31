@@ -131,10 +131,62 @@ const perimetroCuadrado = ladoCuadrado * 4
 function perimetroCuadrado(){
     return ladoCuadrado * 4
 }
-`````
+````
+
 
 Cambiar las const que realizan operaciones por funciones nos trae el siguiente resultado:
 ![funciones-resultados](/Doc/images/funciones-resultados.png)
 
 Así se pueden cambiar los valores de las medidas. 😉
+
+
+# Interactuando con JavaScript desde HTML
+
+Cuando las etiquetas button están dentro de las etiquetas form, tienen la función de enviar la información recopilada en el formulario
+
+1. html -> Preparar html
+2. JavaScript -> funciones para ejecutar
+3. Navegador
+
+HTML
+
+En el boton para calcular el perimetro
+1. En la etiqueta label, usar el atributo for para asignar el valor "InputCuadrado"
+2. En la etiqueta input, usar el atributo id para asignar el valor "InputCuadrado" usado en el atributo for de la etiqueta label. De esta forma se conecta la etiqueta label con al etiqueta input
+3. En la etiqueta button, usar el atributo onclick para asignar el nombre de la función de JavaScript que realizará el cálculo.
+4. Salvar el archivo
+
+````
+<label for="InputCuadrado">
+    Escribe cuanto mide cada lado del cuadrado:
+</label>
+<input  id= "InputCuadrado" type="number">
+<button type= "button" onclick="nombrefuncion()">
+    Calcular el perímetro
+</button>
+````
+
+Navegador
+1. conseguir los valores que el usuario haya ingresado en el input en el navegador
+2. Abrir inspect del navegador
+3. Abri consola del naveador (Asegurarse que el arhivo html este salvado)
+4. Escribir document.getElementById("InputCuadrado"). Esto es para asegurarse que este llamando al input correctro en el archivo html
+
+
+JavaScript
+Crear las funciones en la parte baja del archivo.
+
+1. Crear estuctura de la función
+2. Palabra clave function
+3. Nombre de la función (deberá tener el mismo nombre del paso 3 de HTML)
+4. Abrir {
+5. Crear constante: const seguida de la palabra input
+6. Operador de asignación
+7. pegar o escribir lo escrito en el paso 4 de Navegador:  document.getElementById("InputCuadrado")
+8. ;
+9. Crear constante: const value = input.value; (para obtener el dato ingresado por el usuario)
+10. Crear constante: const perimetro = perimetroCuadrado(value); (Usar la función que calcula el perimetro y como parametro el valor que ingreso el usuario)
+11. Crear un alert: palabra clave *alert* y como parametro la constante del paso 10 -> alert(perimetro)
+
+
 
