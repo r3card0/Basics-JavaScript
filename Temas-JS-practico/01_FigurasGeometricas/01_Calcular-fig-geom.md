@@ -236,3 +236,9 @@ Resultado
 
 ![Resultado2](/Doc/images/calculo-altura.png)
 
+Lo aprendido: Como calcular la raiz cuadrada de un numero en JavaScript. Usando el método Math.square() y entre parentesis el valor
+
+````
+Math.square(4);
+-> 2
+`````
