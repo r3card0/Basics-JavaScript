@@ -188,5 +188,51 @@ Crear las funciones en la parte baja del archivo.
 10. Crear constante: const perimetro = perimetroCuadrado(value); (Usar la función que calcula el perimetro y como parametro el valor que ingreso el usuario)
 11. Crear un alert: palabra clave *alert* y como parametro la constante del paso 10 -> alert(perimetro)
 
+[Leer mas de: document.getElementById(parametro) ](https://www.w3schools.com/js/js_htmldom_document.asp)
 
+Aquí resume lo que entendiste de document.getElementById 😁
+
+````
+resumen aqui
+````
+
+Reto:
+
+En este ejercicio debes crear una función para calcular la altura de un triángulo isósceles.
+
+- La función debe recibir, como parámetros, la longitud de los 3 lados del triángulo.
+- La función debe validar que la longitud de los 3 lados del triángulo corresponden a un triángulo isósceles.
+- La función debe retornar la altura del triángulo.
+
+Pista: la función Math.sqrt de JavaScript puede ayudarte a calcular raíces cuadradas.
+
+![Formula](/Doc/images/formula.png)
+
+* tiene 3 lados iguales
+* 1 de sus lados es la base
+* cuando se corta por la mitad (altura), la base se divide en 2
+* Le lado mas largo (hipotenusa), mantiene el valor de los lados
+* aplicar teorema de pitagoras
+
+
+
+Asi quedo:
+````
+function alturaIsoceles(lado1, lado2, lado3) {
+    if(lado1 == lado2 && lado1 == lado3) {
+        const baseIsoceles = lado1 * 0.5;
+        const radicando = (lado1 ** 2) - ((baseIsoceles ** 2) / 4);
+        return Math.sqrt(radicando);
+    } else {
+        console.log("No es un triángulo Isoceles");
+    }
+}
+
+alturaIsoceles(5,5,3);
+````
+Resultado
+
+![Resultado1](/Doc/images/no-isoceles.png)
+
+![Resultado2](/Doc/images/calculo-altura.png)
 
