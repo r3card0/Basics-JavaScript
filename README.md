@@ -16,3 +16,5 @@
 2. Implementar fórmulas en JavaScript
 3. Crear funciones
 4. Integrar JavaScript con HTML
+
+## Taller # 2. Calcular porcentajes y descuentos
