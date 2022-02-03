@@ -63,3 +63,39 @@ var cupones = ["Cupon 1", "Cupon 2", "Cupon 3"];
 2. Cambiar el input de descuento en HMTL por un input de cupones
 
 body -> header, section, script
+
+````
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cupones</title>
+</head>
+<body>
+    <header>
+        <h1>Cupones</h1>
+        <p>implementar descuentos con cupones</p>
+    </header>
+    <section>
+        <h2>Calcular el precio de la compra con cupones</h2>
+        <form action="">
+            <label for="InputPrice"></label>
+            <input id="InputPrice" type="number">
+            <label for="InputCoupon"></label>
+            <input id="InputCoupon" type="number">
+            <button type="button" onclick="onclickButtonPriceCoupon"></button>
+            <p id="ResultP"></p>
+        </form>
+    </section>
+    <script src=""></script>
+</body>
+</html>
+````
+3. Crear una condicional switch para aplicar cierto porcentaje de descuento en nuestros productos
+
+````
+
+
+````
